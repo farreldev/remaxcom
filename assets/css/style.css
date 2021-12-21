@@ -7,6 +7,10 @@ body {
   font-weight: 300;
 }
 
+.breadcrumb .breadcrumb-item a {
+  text-decoration: none;
+}
+
 .wrapper .top-header {
   height: 50px;
   line-height: 50px;
@@ -102,7 +106,7 @@ body {
   width: 100%;
   text-align: right;
   margin-bottom: 10px;
-  color: #CB1B2C;
+  color: #cb1b2c;
   border-right: 2px solid;
   font-weight: 600;
 }
@@ -115,13 +119,23 @@ body {
 .wrapper .properties-card .card .card-body {
   min-height: 150px;
 }
+.wrapper .properties-card .card .grade {
+  margin: 10px;
+  padding: 7px 10px;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 3px;
+  position: absolute;
+  background-color: #3d91ff;
+  text-transform: capitalize;
+}
 .wrapper .properties-card .card .card-img {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
 }
 .wrapper .properties-card .card .box-price {
   padding: 1rem;
-  background-color: #00308A;
+  background-color: #00308a;
 }
 .wrapper .properties-card .card .box-price h5,
 .wrapper .properties-card .card .box-price span {
@@ -129,6 +143,9 @@ body {
 }
 .wrapper .properties-card .card .box-price h5 {
   margin-bottom: 0;
+}
+.wrapper .properties-card .card .card-body {
+  width: 100%;
 }
 .wrapper .properties-card .card .card-body .rating {
   display: flex;
@@ -162,6 +179,26 @@ body {
   font-size: 12px;
   font-weight: 500;
 }
+.wrapper .properties-card .card .card-body .fitur {
+  margin-top: 15px;
+  display: flex;
+  column-gap: 15px;
+}
+.wrapper .properties-card .card .card-body .fitur span {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+}
+.wrapper .properties-card .card .card-body .fitur span svg {
+  width: 21px;
+  height: 21px;
+}
+.wrapper .properties-card .card .card-body .fitur span svg path {
+  fill: #f5821f;
+}
+.wrapper .properties-card .card .card-body .fitur span img {
+  height: 100%;
+}
 .wrapper .properties-card .card .card-footer {
   display: flex;
   column-gap: 10px;
@@ -172,17 +209,16 @@ body {
   border-radius: 3px;
 }
 .wrapper .properties-card .card .card-footer .card-btn.ghost {
-  border: 1px solid #CB1B2C;
+  border: 1px solid #cb1b2c;
   background-color: #fff;
-  color: #CB1B2C;
+  color: #cb1b2c;
 }
 .wrapper .properties-card .card .card-footer .card-btn:hover {
-  background-color: #9e1522;
+  background-color: #b41827;
 }
 .wrapper .properties-card .card .card-footer .card-btn.ghost:hover {
-  border: 1px solid #00308A;
-  background-color: #fff;
-  color: #00308A;
+  background-color: #cb1b2c;
+  color: #fff;
 }
 .wrapper .btn-icon {
   font-size: 0.8125rem;
@@ -224,8 +260,8 @@ body {
 }
 .wrapper .page-item.active .page-link {
   color: #fff;
-  background-color: #CB1B2C;
-  border-color: #CB1B2C;
+  background-color: #cb1b2c;
+  border-color: #cb1b2c;
 }
 .wrapper .heading-border {
   position: relative;
@@ -468,8 +504,8 @@ body {
   background: #cb1b2c;
 }
 .wrapper .btn-inner {
-  background-color: #CB1B2C;
-  border: #CB1B2C;
+  background-color: #cb1b2c;
+  border: #cb1b2c;
   color: #ffffff;
 }
 .wrapper .btn-inner:hover {
@@ -481,14 +517,14 @@ body {
   padding: 8px 14px;
 }
 .wrapper .card-btn {
-  background-color: #CB1B2C;
+  background-color: #cb1b2c;
   color: #fff;
   font-size: 14px;
   border-top-right-radius: 0;
   border-bottom-left-radius: 0;
 }
 .wrapper .text-primary {
-  color: #00308A !important;
+  color: #00308a !important;
 }
 .wrapper .floating {
   top: 0;
@@ -576,7 +612,13 @@ body {
 }
 
 @media only screen and (max-width: 767px) {
-  .wrapper .ct-right, .wrapper .ct-left {
+  .card-footer {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .wrapper .ct-right,
+.wrapper .ct-left {
     right: inherit;
     left: inherit;
   }
@@ -593,7 +635,8 @@ body {
     padding: 1rem 0 !important;
     border-bottom: 0.0625rem solid rgba(33, 50, 91, 0.1);
   }
-  .wrapper .input-card-sm .btn, .wrapper .input-card-sm .input-card-form {
+  .wrapper .input-card-sm .btn,
+.wrapper .input-card-sm .input-card-form {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
   }
@@ -608,7 +651,8 @@ body {
   }
 }
 @media only screen and (max-width: 1024px) {
-  .wrapper .ct-right, .wrapper .ct-left {
+  .wrapper .ct-right,
+.wrapper .ct-left {
     right: inherit;
     left: inherit;
   }

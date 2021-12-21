@@ -7,6 +7,14 @@ body {
   font-weight: 300;
 }
 
+.breadcrumb {
+  .breadcrumb-item {
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 .wrapper {
   .top-header {
     height: 50px;
@@ -135,6 +143,16 @@ body {
 
   .properties-card {
     .card {
+      .grade {
+        margin: 10px;
+        padding: 7px 10px;
+        color: #fff;
+        font-weight: 500;
+        border-radius: 3px;
+        position: absolute;
+        background-color: $lightblue;
+        text-transform: capitalize;
+      }
       .card-img {
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
@@ -152,6 +170,7 @@ body {
         }
       }
       .card-body {
+        width: 100%;
         .rating {
           display: flex;
           .wrap-star {
@@ -172,11 +191,11 @@ body {
               left: 0;
               top: 0;
               margin: auto;
-              color: #f5821f;
+              color: $orange;
               white-space: nowrap;
               overflow: hidden;
               text-shadow: none;
-              -webkit-text-stroke: 1px #f5821f;
+              -webkit-text-stroke: 1px $orange;
             }
           }
           span.review-label {
@@ -184,6 +203,27 @@ body {
             color: #585960;
             font-size: 12px;
             font-weight: 500;
+          }
+        }
+        .fitur {
+          margin-top: 15px;
+          display: flex;
+          column-gap: 15px;
+          span {
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            // max-height: 24px;
+            svg {
+              width: 21px;
+              height: 21px;
+              path {
+                fill: $orange;
+              }
+            }
+            img {
+              height: 100%;
+            }
           }
         }
       }
@@ -200,12 +240,12 @@ body {
             color: $red;
           }
           &:hover {
-            background-color: darken($red, 10);
+            background-color: darken($red, 5);
           }
           &.ghost:hover {
-            border: 1px solid$primary;
-            background-color: #fff;
-            color: $primary;
+            // border: 1px solid $primary;
+            background-color: $red;
+            color: #fff;
           }
         }
       }
