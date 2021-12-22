@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.css"
+        integrity="sha512-X6rkdr0JIxgdnOUEfnJENeCydCat1urriiDqzgUl92f9NSlnkSTWtlgiH8nxhxkK6nlZ3DxWf7cerVLvbo5NSg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Remax Website</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-header top-bg">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="text-white">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fa fa-phone-alt fa-stack-1x"></i>
+                        </span>+62 21 555 777
+                    </div>
+                    <div class="d-flex text-white">
+                        <span class="font-weight-semibold me-3">Follow Us:</span>
+                        <a href="#" class="text-white" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="text-white" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="text-white" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <a href="index.html"><img src="assets/img/logo.svg" alt="" width="" height="45"
+                            class="d-inline-block align-text-top"></a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" href="#menuOffset"
+                        role="button" aria-controls="menuOffset">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-nav ms-auto d-none d-lg-flex">
+                        <a class="nav-link active text-danger" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="property.html">Properti</a>
+                        <a class="nav-link" href="news.html">News</a>
+                    </div>
+                    <div class="offcanvas offcanvas-start d-block d-lg-none" tabindex="-1" id="menuOffset"
+                        aria-labelledby="menuOffsetLabel">
+                        <div class="offcanvas-header">
+                            <a href="index.html"><img src="assets/img/logo.svg" alt="" width="" height="45"
+                                    class="d-inline-block align-text-top"></a>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="navbar-nav ms-auto">
+                                <a class="nav-link active text-danger" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" href="property.html">Properti</a>
+                                <a class="nav-link" href="news.html">News</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="banner d-flex align-items-center">
+            <div class="container">
+                <div class="row">
+                    <div class="content-banner">
+                        <div class="text-center text-white">
+                            <h4 class="subheading">A RIGHT CHOICE </h4>
+                            <h1 class="fw-bold">IN COMMERCIAL REAL ESTATE</h1>
+                        </div>
+                        <div class="inner-form mt-4">
+                            <form>
+                                <!-- Input Card -->
+                                <div class="input-card input-card-sm">
+                                    <div class="input-card-form">
+                                        <div class="input-group input-group-merge ct-sel">
+                                            <div class="select-wrap">
+                                                <select class="form-control form-select border-0 rounded-0"
+                                                    placeholder="Type">
+                                                    <option value="">Dijual</option>
+                                                    <option value="">Disewakan</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="input-card-form">
+                                        <div class="input-group input-group-merge">
+                                            <input type="text" class="form-control" placeholder="Tentukan Kota..">
+                                        </div>
+                                    </div>
+
+                                    <div class="input-card-form">
+                                        <label for="cityForm" class="form-label visually-hidden">City, state, or
+                                            zip</label>
+                                        <div class="input-group input-group-merge">
+                                            <input type="text" class="form-control" placeholder="Dengan kata kunci..">
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-inner">Search</button>
+                                </div>
+                                <!-- End Input Card -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner-content">
+            <div class="bg-grey">
+                <div class="container">
+                    <div class="row d-flex align-items-center" style="min-height: 650px;">
+                        <div class="col-lg-3 ct-left pe-lg-5">
+                            <h2 class="heading">finding an office</h2>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                                purus
+                                sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus
+                                non
+                                enim</p>
+                            <div class="swiper inner-slide office d-flex justify-content-between">
+                                <div class="swiper-button-next"></div>
+                                <div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="pagination-office"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 ct-right">
+                            <a href="property2.html" class="text-muted text-decoration-none text-hover-primary">More
+                                List <i class="fa fa-chevron-right"></i></a>
+                            <!-- Swiper -->
+                            <div class="swiper office my-4">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/1.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Office/Kantor</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/2.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Office/Kantor</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/3.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Office/Kantor</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/1.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Office/Kantor</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="slider">
+                <div class="container">
+                    <div class="row d-flex align-items-center" style="min-height: 650px;">
+                        <div class="col-lg-3 ct-left pe-lg-5">
+                            <h2 class="heading">finding a warehouse</h2>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                                purus
+                                sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus
+                                non
+                                enim</p>
+                            <div class="swiper warehouse inner-slide 3 d-flex justify-content-between">
+                                <div class="swiper-button-next"></div>
+                                <div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="pagination-warehouse"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 ct-right">
+                            <a href="property2.html" class="text-muted text-decoration-none text-hover-primary">More
+                                List <i class="fa fa-chevron-right"></i></a>
+                            <!-- Swiper -->
+                            <div class="swiper warehouse my-4">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/3.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Warehouse/Gudang</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/4.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Warehouse/Gudang</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/5.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Warehouse/Gudang</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/1.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Warehouse/Gudang</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-grey">
+                <div class="container">
+                    <div class="row d-flex align-items-center" style="min-height: 650px;">
+                        <div class="col-lg-3 ct-left pe-lg-5">
+                            <h2 class="heading">finding a land plots</h2>
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                                purus
+                                sit amet luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus
+                                non
+                                enim</p>
+                            <div class="swiper inner-slide plots d-flex justify-content-between">
+                                <div class="swiper-button-next"></div>
+                                <div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="pagination-plots"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 ct-right">
+                            <a href="property2.html" class="text-muted text-decoration-none text-hover-primary">More
+                                List <i class="fa fa-chevron-right"></i></a>
+                            <!-- Swiper -->
+                            <div class="swiper plots my-4">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/1.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Land Plots/Tanah Kavling</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/2.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Land Plots/Tanah Kavling</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/3.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Land Plots/Tanah Kavling</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="card border-0">
+                                            <a href="detail-property.html">
+                                                <img src="assets/img/photos/1.png" class="card-img-top" alt="...">
+                                            </a>
+                                            <div class="card-body cards-type">
+                                                <div class="location-type"><i class="far fa-map-marker-alt"></i> Jakarta
+                                                    selatan, pS. minggu</div>
+                                                <div class="build-type my-3">Land Plots/Tanah Kavling</div>
+                                                <div class="price-type my-3">Rp. 23 M</div>
+                                                <div class="facilities d-flex align-items-baseline">
+                                                    <div class="d-flex align-items-baseline pe-3"><img
+                                                            src="assets/img/icons/1.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 1,200</div>
+                                                    <div class="d-flex align-items-baseline ps-3 border-start"><img
+                                                            src="assets/img/icons/2.svg" class="me-1" alt=""
+                                                            style="width: 15px;"> 2,300</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="py-lg-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col ct-left">
+                            <h3 class="heading">top news</h3>
+                        </div>
+                        <div class="col">
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam,
+                                purus sit amet luctus venenatis, lectus magna fringilla urna, porttitor</p>
+                        </div>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper news my-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card border-0">
+                                    <a href="detail-news.html">
+                                        <img src="assets/img/photos/1.png" class="card-img-top tp-news" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="text-muted mb-2"><i class="far fa-calendar-alt me-1"></i> 15 Oct
+                                            2021 -
+                                            02:19</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card border-0">
+                                    <a href="detail-news.html">
+                                        <img src="assets/img/photos/1.png" class="card-img-top tp-news" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="text-muted mb-2"><i class="far fa-calendar-alt me-1"></i> 15 Oct
+                                            2021 -
+                                            02:19</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card border-0">
+                                    <a href="detail-news.html">
+                                        <img src="assets/img/photos/1.png" class="card-img-top tp-news" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="text-muted mb-2"><i class="far fa-calendar-alt me-1"></i> 15 Oct
+                                            2021 -
+                                            02:19</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card border-0">
+                                    <a href="detail-news.html">
+                                        <img src="assets/img/photos/1.png" class="card-img-top tp-news" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="text-muted mb-2"><i class="far fa-calendar-alt me-1"></i> 15 Oct
+                                            2021 -
+                                            02:19</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="card border-0">
+                                    <a href="detail-news.html">
+                                        <img src="assets/img/photos/1.png" class="card-img-top tp-news" alt="...">
+                                    </a>
+                                    <div class="card-body">
+                                        <div class="text-muted mb-2"><i class="far fa-calendar-alt me-1"></i> 15 Oct
+                                            2021 -
+                                            02:19</div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next free-mode"></div>
+                        <div class="swiper-button-prev free-mode"></div>
+                    </div>
+                    <div class="text-center">
+                        <a href="property2.html" class="text-muted text-decoration-none">More News <i
+                                class="fa fa-chevron-right ms-1"></i></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-grey">
+                <div class="container py-5">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 ct-left">
+                            <h3 class="heading">about</h3>
+                            <div class="content my-4 text-muted">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna, porttitor</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis, lectus magna fringilla urna, porttitor rhoncus dolor purus non
+                                    enim</p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
+                                    luctus venenatis</p>
+                            </div>
+                        </div>
+                        <div class="col offset-lg-2">
+                            <img src="assets/img/photos/7.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <img src="assets/img/footer-bg.svg" alt="" class="w-100">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-4  border-bottom">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <img src="assets/img/logo.svg" alt="">
+                    </a>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex align-items-center">
+                    Follow Us:
+                    <li class="ms-3">
+                        <a href="#" class="text-primary" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="#" class="text-primary" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="#" class="text-primary" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x text-white"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center pb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Properti</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">News</a></li>
+                </ul>
+                <p class="text-center mb-0">Copyright © 2021 RE/MAX Commercial Indonesia, Ltd. <br> All rights reserved.
+                </p>
+            </footer>
+        </div>
+
+    </div>
+
+    <div class="custom-modal tiny" id="inquiry">
+        <div class="modal-overlay modal-toggle"></div>
+        <div class="modal-wrapper modal-transition">
+
+            <div class="modal-header">
+                <div class="py-3 d-flex justify-content-between align-items-center w-100">
+                    <strong class="modal-title">share this article</strong>
+                    <button class="modal-close modal-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="fill-current w-4 h-4">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path
+                                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal-body">
+                <div class="custom-modal-content">
+
+                    <p class="text-center mb-7">If you like this article, share it with your friend and your community
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.3.1/swiper-bundle.min.js"
+        integrity="sha512-v+pIzqEVf0+O50Ls9scw6DDZT5On6G5wnXLLMSjYlfJJrNe+ZCWK849PBUYQDagZKc2125WKYJY3XugLNwwPfA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Initialize Swiper -->
+    <script type="text/javascript">
+        var swiper = new Swiper(".office", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: ".pagination-office",
+                type: "fraction",
+                formatFractionCurrent: function (number) {
+                    return '0' + number;
+                },
+                formatFractionTotal: function (number) {
+                    return '0' + number;
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+        var swiper2 = new Swiper(".warehouse", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: ".pagination-warehouse",
+                type: "fraction",
+                formatFractionCurrent: function (number) {
+                    return '0' + number;
+                },
+                formatFractionTotal: function (number) {
+                    return '0' + number;
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+        var swiper3 = new Swiper(".plots", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: {
+                el: ".pagination-plots",
+                type: "fraction",
+                formatFractionCurrent: function (number) {
+                    return '0' + number;
+                },
+                formatFractionTotal: function (number) {
+                    return '0' + number;
+                }
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+        var swiper4 = new Swiper(".news", {
+            slidesPerView: 5,
+            spaceBetween: 10,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@0.75": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@1.00": {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                "@1.50": {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>

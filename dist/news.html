@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Remax Website</title>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-header top-bg">
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <div class="text-white">
+                        <span class="fa-stack">
+                            <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                            <i class="fa fa-phone-alt fa-stack-1x"></i>
+                        </span>+62 21 555 777
+                    </div>
+                    <div class="d-flex text-white">
+                        <span class="font-weight-semibold me-3">Follow Us:</span>
+                        <a href="#" class="text-white" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="text-white" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </span>
+                        </a>
+                        <a href="#" class="text-white" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg navbar-light bg-white">
+                    <a href="index.html"><img src="assets/img/logo.svg" alt="" width="" height="45"
+                            class="d-inline-block align-text-top"></a>
+                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" href="#menuOffset"
+                        role="button" aria-controls="menuOffset">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-nav ms-auto d-none d-lg-flex">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" href="property.html">Properti</a>
+                        <a class="nav-link active text-danger" href="news.html">News</a>
+                    </div>
+                    <div class="offcanvas offcanvas-start d-block d-lg-none" tabindex="-1" id="menuOffset"
+                        aria-labelledby="menuOffsetLabel">
+                        <div class="offcanvas-header">
+                            <a href="index.html"><img src="assets/img/logo.svg" alt="" width="" height="45"
+                                    class="d-inline-block align-text-top"></a>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="navbar-nav ms-auto">
+                                <a class="nav-link active text-danger" aria-current="page" href="index.html">Home</a>
+                                <a class="nav-link" href="property.html">Properti</a>
+                                <a class="nav-link" href="news.html">News</a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="small-banner d-flex align-items-center">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="small-">
+                        <h3 class="text-white mb-0">NEWS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container pt-5">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">News</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mb-5 news-card">
+                <div class="col mb-4">
+                    <div class="card shadow h-100 border-0">
+                        <img class="card-img" src="assets/img/photos/1.png" alt="Image Description">
+                        <div class="card-body">
+                            <small class="text-muted">2 Agustus 2021</small>
+                            <span class="card-text mt-2 d-block text-truncate">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero fugit in tenetur soluta
+                                accusamus similique impedit corporis veniam, quod ipsum neque nesciunt ex eius? Cum
+                                vitae sint veniam quidem accusantium.
+                            </span>
+                        </div>
+                        <div class="card-footer text-muted p-0 border-0 bg-white justify-content-end d-flex">
+                            <a href="detail-news.html" class="btn card-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col mb-4">
+                    <div class="card shadow h-100 border-0">
+                        <img class="card-img" src="assets/img/photos/2.png" alt="Image Description">
+                        <div class="card-body">
+                            <small class="text-muted">2 Agustus 2021</small>
+                            <span class="card-text mt-2 d-block text-truncate">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sitLorem ipsum
+                                dolor sit ametLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
+                                sitLorem ipsum dolor sit amet
+                            </span>
+                        </div>
+                        <div class="card-footer text-muted p-0 border-0 bg-white justify-content-end d-flex">
+                            <a href="detail-news.html" class="btn card-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow h-100 border-0">
+                        <img class="card-img" src="assets/img/photos/3.png" alt="Image Description">
+                        <div class="card-body">
+                            <small class="text-muted">2 Agustus 2021</small>
+                            <span class="card-text mt-2 d-block text-truncate">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sitLorem ipsum
+                                dolor sit
+                            </span>
+                        </div>
+                        <div class="card-footer text-muted p-0 border-0 bg-white justify-content-end d-flex">
+                            <a href="detail-news.html" class="btn card-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow h-100 border-0">
+                        <img class="card-img" src="assets/img/photos/4.png" alt="Image Description">
+                        <div class="card-body">
+                            <small class="text-muted">2 Agustus 2021</small>
+                            <span class="card-text mt-2 d-block text-truncate">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sitLorem ipsum
+                                dolor sit ametLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
+                                sitLorem ipsum dolor sit amet
+                            </span>
+                        </div>
+                        <div class="card-footer text-muted p-0 border-0 bg-white justify-content-end d-flex">
+                            <a href="detail-news.html" class="btn card-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card shadow h-100 border-0">
+                        <img class="card-img" src="assets/img/photos/5.png" alt="Image Description">
+                        <div class="card-body">
+                            <small class="text-muted">2 Agustus 2021</small>
+                            <span class="card-text mt-2 d-block text-truncate">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sitLorem ipsum
+                                dolor sit ametLorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
+                                sitLorem ipsum dolor sit amet
+                            </span>
+                        </div>
+                        <div class="card-footer text-muted p-0 border-0 bg-white justify-content-end d-flex">
+                            <a href="detail-news.html" class="btn card-btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="...">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <span class="page-link">Previous</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item active" aria-current="page">
+                        <span class="page-link">2</span>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <img src="assets/img/footer-bg.svg" alt="" class="w-100">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-4  border-bottom">
+                <div class="col-md-4 d-flex align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                        <img src="assets/img/logo.svg" alt="">
+                    </a>
+                </div>
+                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex align-items-center">
+                    Follow Us:
+                    <li class="ms-3">
+                        <a href="#" class="text-primary" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x text-white"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="#" class="text-primary" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-twitter fa-stack-1x text-white"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="ms-1">
+                        <a href="#" class="text-primary" target="_blank">
+                            <span class="fa-stack">
+                                <i class="fa fa-circle fa-stack-2x icon-background"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x text-white"></i>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <footer class="py-3 my-4">
+                <ul class="nav justify-content-center pb-3">
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Properti</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">News</a></li>
+                </ul>
+                <p class="text-center mb-0">Copyright © 2021 RE/MAX Commercial Indonesia, Ltd. <br> All rights reserved.
+                </p>
+            </footer>
+        </div>
+
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script type="text/javascript">
+    </script>
+
+</body>
+
+</html>
