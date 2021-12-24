@@ -153,9 +153,9 @@
                                 non
                                 enim</p>
                             <div class="swiper inner-slide office d-flex justify-content-between">
-                                <div class="swiper-button-next" id="list-office-next"></div>
+                                <div class="swiper-button-next office-next"></div>
                                 <div>
-                                    <div class="swiper-button-prev" id="list-office-prev"></div>
+                                    <div class="swiper-button-prev office-prev"></div>
                                     <div class="pagination-office"></div>
                                 </div>
                             </div>
@@ -269,9 +269,9 @@
                                 non
                                 enim</p>
                             <div class="swiper warehouse inner-slide 3 d-flex justify-content-between">
-                                <div class="swiper-button-next" id="list-warehouse-next"></div>
+                                <div class="swiper-button-next warehouse-next"></div>
                                 <div>
-                                    <div class="swiper-button-prev" id="list-warehouse-prev"></div>
+                                    <div class="swiper-button-prev warehouse-prev"></div>
                                     <div class="pagination-warehouse"></div>
                                 </div>
                             </div>
@@ -385,9 +385,9 @@
                                 non
                                 enim</p>
                             <div class="swiper inner-slide plots d-flex justify-content-between">
-                                <div class="swiper-button-next" id="list-land-next"></div>
+                                <div class="swiper-button-next land-next"></div>
                                 <div>
-                                    <div class="swiper-button-prev" id="list-land-prev"></div>
+                                    <div class="swiper-button-prev land-prev"></div>
                                     <div class="pagination-plots"></div>
                                 </div>
                             </div>
@@ -574,8 +574,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-button-next free-mode" id="list-news-next"></div>
-                        <div class="swiper-button-prev free-mode" id="list-news-prev"></div>
+                        <div class="swiper-button-next free-mode" id="news-next"></div>
+                        <div class="swiper-button-prev free-mode" id="news-prev"></div>
                     </div>
                     <div class="text-center">
                         <a href="property2.html" class="text-muted text-decoration-none">More News <i
@@ -718,8 +718,8 @@
                 }
             },
             navigation: {
-                nextEl: "#list-office-next",
-                prevEl: "#list-office-prev",
+                nextEl: ".office-next",
+                prevEl: ".office-prev",
             },
             breakpoints: {
                 "@0.00": {
@@ -754,8 +754,8 @@
                 }
             },
             navigation: {
-                nextEl: "#list-warehouse-next",
-                prevEl: "#list-warehouse-next",
+                nextEl: ".warehouse-next",
+                prevEl: ".warehouse-prev",
             },
             breakpoints: {
                 "@0.00": {
@@ -790,8 +790,8 @@
                 }
             },
             navigation: {
-                nextEl: "#list-land-next",
-                prevEl: "#list-land-next",
+                nextEl: ".land-next",
+                prevEl: ".land-prev",
             },
             breakpoints: {
                 "@0.00": {
@@ -812,7 +812,6 @@
                 },
             },
         });
-
         var swiper4 = new Swiper(".news", {
             slidesPerView: 5,
             spaceBetween: 10,
@@ -821,8 +820,8 @@
                 el: ".swiper-pagination",
             },
             navigation: {
-                nextEl: "#list-news-next",
-                prevEl: "#list-news-prev",
+                nextEl: "#news-next",
+                prevEl: "#news-prev",
             },
             breakpoints: {
                 "@0.00": {
